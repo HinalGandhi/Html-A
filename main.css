@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f3f6;
 }
 #header{
     display: flex;
@@ -85,4 +86,24 @@ body {
     flex-direction: row;
     color: white;
     align-items: center; 
+}
+.category{
+    display: flex;
+    background-color: white;
+    height: 12vh;
+    border-bottom: 1px solid rgb(202, 200, 200);
+    align-items: center;
+}
+.categoryList{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.categoryTitle{
+    font-size: 13px;
+    font-weight: bold;
+}
+.categoryItem{
+    padding: 25px;
 }

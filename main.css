@@ -196,6 +196,7 @@ ul li {
 ul {
   margin: 0;
   padding: 0;
+  max-width: 80%;
 }
 .items {
   display: flex;
@@ -207,16 +208,27 @@ ul {
   width: 430px;
 }
 .item1 {
+  max-width: 100%;
   font-size: 14px;
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .item2 {
   font-size: 15px;
   color: #388e3c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
 }
 .item3 {
   font-size: 15px;
   color: #7f7f7f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .shopNow {
   display: flex;

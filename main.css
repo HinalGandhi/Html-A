@@ -1,110 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f1f3f6;
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: #f1f3f6;
 }
-#header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #2874f0;
-    height: 6vh;
-    width: 100vw;
-
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2874f0;
+  height: 6vh;
+  width: 100vw;
 }
-
-.flipkartLogo{  
-    height: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+input:focus {
+  border: white;
 }
-.header2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20vw;
+.flipkartLogo {
+  height: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
-.headerLogo{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    height: 40%;
-    max-width: 100%;
-    align-items: center;
+.header2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20vw;
 }
-.explore{
-    text-decoration: none;
-    font-style: italic;
-    color: white;
-    font-size: 0.7rem;
-    width: 5rem;
+.headerLogo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 40%;
+  max-width: 100%;
+  align-items: center;
 }
-#plus{
-    color: yellow;
+.explore {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+  font-size: 0.7rem;
+  width: 5rem;
 }
-.searchBar{
-    display: flex;
-    flex-direction: row;
-    border-radius: 2px;
-    border: 2px solid white;
-    padding: 0;
-    margin: 0;
+#plus {
+  color: yellow;
 }
-.searchInp{
-    width: 100%;
-    height: 100%;
-    border: none;
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  border-radius: 2px;
+  border: 2px solid white;
+  padding: 0;
+  margin: 0;
 }
-.searchIcon{
-    background-color: white;
-    border: none;
+.searchInp {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
-.searchInputBar{
-    width: 26vw;
-    height: 3.5vh;
-    border: none;
+.searchIcon {
+  background-color: white;
+  border: none;
 }
-.loginButton{
-    color:#2874f0;
-    background-color: white;
-    font-weight:550;
-    height:32px;
-    border: 1px solid #dbdbdb;
-    border-radius: 2px;
-    padding:5px 40px;
-    font-size: 16.2px;
+.searchInputBar {
+  width: 26vw;
+  height: 3.5vh;
+  border: none;
 }
-.moreOpts{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    align-items: center;
+.loginButton {
+  color: #2874f0;
+  background-color: white;
+  font-weight: 550;
+  height: 32px;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  padding: 5px 40px;
+  font-size: 16.2px;
 }
-.shopCart{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    align-items: center; 
+.moreOpts {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
 }
-.category{
-    display: flex;
-    background-color: white;
-    height: 12vh;
-    border-bottom: 1px solid rgb(202, 200, 200);
-    box-shadow:0 1px 1px 0 rgba(133, 132, 132, 0.16);
-    align-items: center;
+.shopCart {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
 }
-.categoryList{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.category {
+  display: flex;
+  background-color: white;
+  height: 12vh;
+  border-bottom: 1px solid rgb(202, 200, 200);
+  box-shadow: 0 1px 1px 0 rgba(133, 132, 132, 0.16);
+  align-items: center;
 }
-.categoryTitle{
-    font-size: 13px;
-    font-weight: bold;
+.categoryList {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.categoryItem{
-    padding: 25px;
+.categoryTitle {
+  font-size: 13px;
+  font-weight: bold;
+}
+.categoryItem {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deals {
+  display: flex;
+  margin: auto;
+  max-width: 100%;
+  width: 90vw;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.dealHeader {
+  height: 70px;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 76.5vw;
+  padding-left: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: flex-start;
+}
+.offerHeader {
+  height: 70px;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+.dealsBar {
+  background-color: white;
+  overflow: hidden;
+}
+.adBlock {
+  background-color: white;
+  padding: 5px 5px 0px 5px;
+  margin-left: 15px;
+}
+.viewButton {
+  padding: 5px;
+  width: 6rem;
+  height: 38px;
+  background-color: #2874f0;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.stopwatch {
+  width: 56.5vw;
+  display: flex;
+  padding: 25px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.time {
+  color: #7f7f7f;
+  font-weight: 600;
+  font-size: 16px;
+}
+.dealItem {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+  vertical-align: top;
+  width: 100%;
+  max-height: 366px;
+  text-align: center;
+}
+ul li {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 25px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 240px;
+  padding: 20px;
+  width: 430px;
+}
+.item1 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.item2 {
+  font-size: 15px;
+  color: #388e3c;
+}
+.item3 {
+  font-size: 15px;
+  color: #7f7f7f;
+}
+.shopNow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+h5 {
+  margin: 0;
+  padding: 0;
+  color: #babdc3;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 25px;
 }

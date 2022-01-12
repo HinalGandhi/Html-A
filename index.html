@@ -2,401 +2,374 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15d25d2f3f.js" crossorigin="anonymous"></script>
     <title>
         Flipkart
     </title>
-    <script src="https://kit.fontawesome.com/15d25d2f3f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./main.css" type="text/css">
     <link rel="icon" type="image/x-icon"
         href="data:image/jpeg;base64,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">
 </head>
+<!--Navbar start-->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid" style="width: 85vw; max-width: 100%;">
+        <span class="nav-item ms-auto" id="flipkartLogo">
+            <!--Here flipcart Logo-->
+            <a href=""><img
+                    src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                    alt="" class="image-fluid" height="20px"></a>
+            <div class="d-flex">
+                <a href="" class="text-light" style="font-size: 12px;"> <i>
+                        Explore</i>
+                    <span class="text-warning fs-6">plus
+                        <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png"
+                            alt="plus" height="10px">
+                    </span></a>
+            </div>
+        </span>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <div class="form-group mt-1 m-0 col-6">
+                <div class="input-group-text text-primary bg-white" style="padding: 0; border-radius: 2px;">
+                    <input type="text" class="form-control border-0" style="font-size: 14px;"
+                        placeholder="Search for products, brands and more" aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
+                    <button class="searchIcon" type="submit">
+                        <img width="20" height="20"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPnP2dElIfBo9t8o-SXCwGPIxvXTRudc5-UA&usqp=CAU">
+                    </button>
+                </div>
+            </div>
+            <ul class="navbar-nav mx-auto align-items-center">
+                <li class="navbar-item">
+                    <button type="button" style="border-radius: 1.5px;" class="btnlogin">Login</button>
+                </li>
+                <li class="navbar-item dropdown align-items-center">
+                <li href="" class="nav-link mx-3 text-light" style="font-size: 14px;"><b>More</b> <i
+                        class="fa fas fa-angle-down" style="color: white; font-size: 14px;"></i></li>
+                </li>
+                <li class="navbar-item">
+                    <a href="" class="nav-link mx-3 text-light" style="font-size: 14px;;"> <i
+                            class="fa fa-shopping-cart" style="color: white; font-size: 14px;"></i> <b>
+                            Cart</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Navbar End-->
+<!--Section images strats-->
+<section class="py-4 bg-white" style="padding-bottom: 0 !important; box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);">
+    <!--container starts-->
+    <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between imagesalign">
+            <div>
+                <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100">
+                <p>Top Offers</p>
+            </div>
+            <div>
+                <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100">
+                <p>Grocery</p>
+            </div>
+            <div>
+                <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100">
+                <p>Mobiles</p>
+            </div>
+            <div>
+                <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100">
+                <div>
+                    <p>Fashion <i class="fas fa-angle-down" style='font-size:10px;color: black;padding: 5px;'></i></p>
+                </div>
+            </div>
+            <div>
+                <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100">
+                <div>
+
+                    <p>Electronics <i class="fas fa-angle-down" style='font-size:10px;color: black;padding: 5px;'></i>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100">
+                <div>
+
+                    <p>Home <i class="fas fa-angle-down" style='font-size:10px;color: black;padding: 5px;'></i></p>
+                </div>
+            </div>
+            <div>
+                <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100">
+                <div>
+
+                    <p>Appliances <i class="fas fa-angle-down" style='font-size:10px;color: black;padding: 5px;'></i>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100">
+                <p>Travel</p>
+            </div>
+            <div>
+                <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100">
+                <div>
+
+                    <p>Beauty,Toys & More <i class="fas fa-angle-down"
+                            style='font-size:10px;color: black;padding: 5px;'></i></p>
+                </div>
+            </div>
+        </div>
+        <!--container End-->
+</section>
+<!--Section images Ends-->
 
 <body>
-    <main>
-        <!--Header starts-->
-        <header>
-            <nav>
-                <div id="header">
-                    <div class="headerLogo" style="width: 44vw;">
-                        <div style="display: flex; flex-direction: column; justify-content: center; padding: 5px;">
-                            <img width="80" class="flipkartLogo" style="align-self: end;"
-                                src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png">
-                            <a class="explore" style="align-self: end;" href="/plus">Explore
-                                <span id="plus">Plus</span>
-                                <img width="10"
-                                    src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png">
-                            </a>
-                        </div>
-                        <div class="searchBar">
-                            <div class="searchInp">
-                                <input type="text" value="" class="searchInputBar"
-                                    placeholder="Search for products, brands and more">
-                            </div>
-                            <button class="searchIcon" type="submit">
-                                <img width="20" height="20"
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPnP2dElIfBo9t8o-SXCwGPIxvXTRudc5-UA&usqp=CAU">
-                            </button>
-                        </div>
-                    </div>
+    <div class="container-fluid mt-3" style="width: 80%; max-width: 100%;">
+        <div class="row">
+            <div class="col-10">
+                <!--Deals of the day-->
+                <section>
+                    <div class="d-flex align-items-center justify-content-between imagesalign box">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-header bg-white">
+                                <div class="inline-block">
+                                    <span class="d-flex justify-content-between">
+                                        <p class="mb-0 text-secondary" style="font-size: 18px;"><b
+                                                class="text-dark">Deals of the day </b><img
+                                                src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg"
+                                                height="25px" width="22px" alt="" style="margin-left: 20px;"> <i
+                                                class=""></i>
+                                            22 : 07 : 36 Left</p>
 
-                    <div class="header2">
-                        <button class="loginButton">
-                            Login
-                        </button>
-                        <div>
-                            <div>
-                                <div>
-                                    <div class='moreOpts'>
-                                        <div>
-                                            More
-                                        </div>
-                                        <i class="fas fa-angle-down"
-                                            style='font-size:10px;color: white;padding: 5px;'></i>
+                                        <button class="btn btn-primary float-right">View All</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-body owl-slider" style="overflow: hidden;">
+                                <div class="col-12 d-flex owl-carousel " id="carousel">
+                                    <div class="pr-3 imghoverr item">
+                                        <img src="https://rukminim1.flixcart.com/image/150/150/k0wqwsw0/electric-kettle/g/t/d/butterfly-rapid-kettle-1-5-litre-wave-750-ml-water-bottle-rapid-original-imafkfy7zaekbubs.jpeg?q=70"
+                                            alt="" class="img-fluid" height="20" width="24">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Butterfly Electric Kettle</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 50% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr item">
+                                        <img src="https://rukminim1.flixcart.com/image/150/150/k5bcscw0/duffel-bag/g/d/p/blue-stylish-gym-bag-for-men-gym-bag-gym-bag-for-women-stylish-original-imafzfa5gpsbgv6p.jpeg?q=70"
+                                            alt="" class="imagedealofday" height="20" width="24">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Bags and Luggage</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 80% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Grab The Deal</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr item">
+                                        <img src="https://rukminim1.flixcart.com/image/150/150/jjbqufk0/home-temple/6/k/x/ka-01-kamdhenu-art-and-craft-original-imaf5yys5bnffyjy.jpeg?q=70"
+                                            alt="" class="imagedealofday">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Home, Temple</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 60% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr item">
+                                        <img src="https://rukminim1.flixcart.com/image/150/150/jeokbrk0/collapsible-wardrobe/c/k/s/pp-1406-furn-central-cats-and-fish-bones-original-imaf3bmzzfhhx8zk.jpeg?q=70"
+                                            alt="" class="imagedealofday" height="24" width="24">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Home Decore</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">From &#x20B9 999</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Best Deal</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr item">
+                                        <img src="https://rukminim1.flixcart.com/image/150/150/k2f1n680/headphone/9/g/s/boat-rockerz-400-super-extra-bass-original-imafg95ztgz7z8yz.jpeg?q=70"
+                                            alt="" class="imagedealofday" height="24" width="24">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Best of Brands!</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">From &#x20B9 599</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr item">
+                                        <img src="https://rukminim1.flixcart.com/image/150/150/k4k7f680/curtain/5/3/6/green-colour-geometrical-printed-eyelet-curtain-for-door-228-original-imafhd6fjjh4vfu8.jpeg?q=70"
+                                            alt="" class="imagedealofday" height="24" width="24">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Home Decore</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">From ₹149+Extra10%Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Harpa, Zivame, Dreambe.</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr item">
+                                        <img src="https://rukminim1.flixcart.com/image/150/150/ke7ff680/hammock-swing/j/f/u/q3-jkaf-y3l0-furniture-kart-original-imafux96kpy7grch.jpeg?q=70"
+                                            alt="" class="imagedealofday" height="24" width="24">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Swings, Stools</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 80% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr item">
+                                        <img src="https://rukminim1.flixcart.com/image/150/150/jwzabgw0/bean-bag-cover/h/7/k/xxxl-11499-flipkart-smartbuy-original-imafhgg2szzhgayr.jpeg?q=70"
+                                            alt="" class="imagedealofday" height="24" width="24">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Swings, Stools</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 80% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr item">
+                                        <img src="https://rukminim1.flixcart.com/image/150/150/k0wqwsw0/electric-kettle/g/t/d/butterfly-rapid-kettle-1-5-litre-wave-750-ml-water-bottle-rapid-original-imafkfy7zaekbubs.jpeg?q=70"
+                                            alt="" class="img-fluid" height="20" width="24">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Butterfly Electric Kettle</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 50% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr item">
+                                        <img src="https://rukminim1.flixcart.com/image/200/200/jqwny4w0/mousepad/h/g/j/eagletail-india-pubg-mp64-original-imafcszferfg8fa9.jpeg?q=70"
+                                            alt="" class="img-fluid" height="20" width="24">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Mobile Gaming Tips</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 50% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>
+                                    <div class="pr-3 imghoverr item">
+                                        <img src="https://rukminim1.flixcart.com/image/150/150/k0wqwsw0/electric-kettle/g/t/d/butterfly-rapid-kettle-1-5-litre-wave-750-ml-water-bottle-rapid-original-imafkfy7zaekbubs.jpeg?q=70"
+                                            alt="" class="img-fluid" height="20" width="24">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Butterfly Electric Kettle</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 50% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                        <div class="shopCart">
-                            <i class="fas fa-shopping-cart" style='font-size:16px;color: white;padding: 5px;'></i>
-                            <div>
-                                Cart
                             </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-        </header>
-        <!--Header ends-->
-        <!--Category Bar starts-->
-        <section class="category">
-            <div class="categoryList">
-                <div class="categoryItem">
-                    <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100">
-                    <span class="categoryTitle">Top Offers</span>
-                </div>
-                <div class="categoryItem">
-                    <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100">
-                    <span class="categoryTitle">Grocery</span>
-                </div>
-                <div class="categoryItem">
-                    <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100">
-                    <span class="categoryTitle">Mobiles</span>
-                </div>
-                <div class="categoryItem">
-                    <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100">
-                    <div>
-                        <span class="categoryTitle">Fashion</span>
-                        <i class="fas fa-angle-down" style='font-size:10px;color: black;padding: 5px;'></i>
-                    </div>
-                </div>
-                <div class="categoryItem">
-                    <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100">
-                    <div>
-
-                        <span class="categoryTitle">Electronics</span>
-                        <i class="fas fa-angle-down" style='font-size:10px;color: black;padding: 5px;'></i>
-                    </div>
-                </div>
-                <div class="categoryItem">
-                    <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100">
-                    <div>
-
-                        <span class="categoryTitle">Home</span>
-                        <i class="fas fa-angle-down" style='font-size:10px;color: black;padding: 5px;'></i>
-                    </div>
-                </div>
-                <div class="categoryItem">
-                    <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100">
-                    <div>
-
-                        <span class="categoryTitle">Appliances</span>
-                        <i class="fas fa-angle-down" style='font-size:10px;color: black;padding: 5px;'></i>
-                    </div>
-                </div>
-                <div class="categoryItem">
-                    <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100">
-                    <span class="categoryTitle">Travel</span>
-                </div>
-                <div class="categoryItem">
-                    <img width="60" src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100">
-                    <div>
-
-                        <span class="categoryTitle">Beauty,Toys & More</span>
-                        <i class="fas fa-angle-down" style='font-size:10px;color: black;padding: 5px;'></i>
-                    </div>
-                </div>
+                </section>
+                <!--Deals of the day Ends-->
             </div>
-        </section>
-        <!--Category Bar ends-->
-
-        <!--Deals section starts-->
-        <section class="deals">
-            <div class="dealsBar">
-                <div class="dealHeader">
-                    <h2>Deals of the Day</h2>
-                    <div class="stopwatch"><img class=""
-                            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg"
-                            height="24" width="24" style="margin:5px"><span class="time" style="color: #afadad; font-size: 16px;"><span><span>22 : 
-                                </span><span>07     :
-                                </span><span>36</span></span> Left</span></div>
-                    <button class="viewButton">VIEW ALL</button>
-                </div>
-                <div class="dealItem">
-                    <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/300/300/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70 2x, https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70 1x">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Casio, Fastrack &amp; more</li>
-                                    <li class="item2">Upto 80% Off</li>
-                                    <li class="item3">Women Watches</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/jx7uykw0/top/z/w/y/xl-sftops4257-sassafras-original-imafhz6ucvgrtsfw.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/300/300/jx7uykw0/top/z/w/y/xl-sftops4257-sassafras-original-imafhz6ucvgrtsfw.jpeg?q=70 2x, https://rukminim1.flixcart.com/image/150/150/jx7uykw0/top/z/w/y/xl-sftops4257-sassafras-original-imafhz6ucvgrtsfw.jpeg?q=70 1x">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Ruffled Tops, Lingerie & Nighty</li>
-                                    <li class="item2">From ₹149+Extra10%Off</li>
-                                    <li class="item3">Harpa, Zivame, Dreambe...</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/300/300/k6mibgw0/t-shirt/6/u/j/m-w24-hood-gmwb-lewel-original-imafpfn4ce7rw83k.jpeg?q=70 2x, https://rukminim1.flixcart.com/image/150/150/k6mibgw0/t-shirt/6/u/j/m-w24-hood-gmwb-lewel-original-imafpfn4ce7rw83k.jpeg?q=70 1x">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">T-Shirts, Tops, Bra, Nightwear</li>
-                                    <li class="item2">Upto 80%+Extra 10%Off</li>
-                                    <li class="item3">Metronaut, ONLY, Clovia...</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/300/300/kc9eufk0/sari/g/v/k/free-1535s115-saara-unstitched-original-imaftfasqykwbrh8.jpeg?q=70 2x, https://rukminim1.flixcart.com/image/150/150/kc9eufk0/sari/g/v/k/free-1535s115-saara-unstitched-original-imaftfasqykwbrh8.jpeg?q=70 1x">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Divastri Printed, Self Design, Embellished, Animal Print Fashion Cotton Blend Saree</li>
-                                    <li class="item2">From₹199+Extra10%Off</li>
-                                    <li class="item3">Embroidered,Embellished & more</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/300/300/jwzabgw0/coffee-table/m/7/s/tempered-glass-caferia-coffee-table-black-godrej-interio-black-original-imafhjmvb5gufpq9.jpeg?q=70 2x, https://rukminim1.flixcart.com/image/150/150/jwzabgw0/coffee-table/m/7/s/tempered-glass-caferia-coffee-table-black-godrej-interio-black-original-imafhjmvb5gufpq9.jpeg?q=70 1x">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Casio, Fastrack &amp; more</li>
-                                    <li class="item2">Upto 80% Off</li>
-                                    <li class="item3">Women Watches</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/300/300/k4x2du80/shoe/g/2/x/mrj1339-7-aadi-orange-original-imafnq6yrhtecwwu.jpeg?q=70 2x, https://rukminim1.flixcart.com/image/150/150/k4x2du80/shoe/g/2/x/mrj1339-7-aadi-orange-original-imafnq6yrhtecwwu.jpeg?q=70 1x">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Campus, Sparx & more</li>
-                                    <li class="item2">Under ₹999</li>
-                                    <li class="item3">Shoes, Sandals...</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/150/150/k4k7f680/curtain/5/3/6/green-colour-geometrical-printed-eyelet-curtain-for-door-228-original-imafhd6fjjh4vfu8.jpeg?q=70">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Curtains, Cushions & more</li>
-                                    <li class="item2">From ₹99+Extra 10%OFF</li>
-                                    <li class="item3">Never Before...</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/150/150/kgv5x8w0/jacket/h/b/t/m-dtaw20jk004b-ducati-original-imafxyfzjtrgtyuz.jpeg?q=70    ">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Casio, Fastrack &amp; more</li>
-                                    <li class="item2">Upto 80% Off</li>
-                                    <li class="item3">Women Watches</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                  
-                </div>
-            </div>
-            <div class="adBlock">
+            <div class="col my-auto box imghoverr" style="padding: 0; margin: 0ch; flex-grow: 0.95!important;">
                 <img src="https://rukminim1.flixcart.com/flap/464/708/image/633789f7def60050.jpg?q=70" alt=""
-                    height="350" width="230">
+                    class="img-fluid" style=" height: 20rem !important;; width:300px;background-color: white !important;
+                    padding: 5px 5px 5px 5px;">
             </div>
-        </section>
-        <!--Deals section ends-->
-        
-        <!-- Books and instrument section starts-->
-        <section class="deals">
-            <div class="dealsBar" style="width: 100%;"> 
-                <div class="offerHeader">
-                    <div class="shopNow">
-                        <h3 style="margin: 0; padding: 0;">Books and Music Instruments</h3>
-                        <h5 >Shop Now!</h5>
+        </div>
+    </div>
+    <div class="container-fluid" style="width: 78.5%; max-width: 100%; padding: 0">
+        <div class="row mt-3">
+            <div class="col-12">
+                <!--Books Section starts-->
+                <section>
+                    <div class="d-flex align-items-center justify-content-between imagesalign box">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-header bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="d-flex-column">
+                                        <p class="mb-0" style="font-size: 18px;"><b>Books and Music Instruments</b>
+                                        <p class="float-left mt-0 mb-0 text-secondary" style="font-size: 15px;">Shop
+                                            Now!</p>
+                                        </p>
+                                    </span>
+                                    <button class="btn btn-primary float-right">View All</button>
+                                </div>
+
+                            </div>
+                            <div class="card-body" style="overflow:hidden;">
+                                <div class="col-12 d-flex">
+                                    <div class="pr-4 imghoverr">
+                                        <img src="https://rukminim1.flixcart.com/image/612/612/j79czgw0/harmonium/j/x/q/sandhu-s9-sandhu-original-imaexghqstgjdfya.jpeg?q=70"
+                                            alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Harmoniums</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 60% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Shop Now!</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="https://rukminim1.flixcart.com/image/200/200/jnqcpzk0/flute/4/v/b/nspmh4-scale-g-n-s-padam-music-house-original-imafacvga88hqmzk.jpeg?q=70"
+                                            alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Flutes</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 80% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Shop Now!</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="https://rukminim1.flixcart.com/image/612/612/k01b8280/acoustic-guitar/5/n/z/rvl-38c-lgp-3ts-revel-original-imafjx6gxggbsxtr.jpeg?q=70"
+                                            alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Acoustic Guitars</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Starting ₹1799</p>
+                                        <p class="text-secondary" style="font-size: 12px;">By Revel</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="https://rukminim1.flixcart.com/image/612/612/jzfvma80/guitar-capo/v/z/a/combo-pack-ag-011-string-set-agc-20-with-6-celluloid-picks-original-imafjgggxx3swzbb.jpeg?q=70"
+                                            alt="" class="imagedealofday">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Musical Accessories</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Upto 80% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Shop Now!</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="https://rukminim1.flixcart.com/image/150/150/j1b0xow0/harmonica/7/g/y/t-2401-easttop-original-imaemh6jgrbzchrr.jpeg?q=70"
+                                            alt="" class="imagedealofday">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Harmonicas</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">50-70% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Shop Now!</p>
+                                    </div>
+                                    <div class="pr-4 imghoverr">
+                                        <img src="https://rukminim1.flixcart.com/image/612/612/jzu60sw0/acoustic-guitar/z/t/4/rvl-38c-lpg-bls-revel-original-imafjrkncwveagk5.jpeg?q=70"
+                                            alt="" class="imagedealofday">
+                                        <p class="d-block pt-2 mb-1"
+                                            style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                                            Acoustic Guitars</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;">Starting ₹1799</p>
+                                        <p class="text-secondary" style="font-size: 12px;">By Revel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="viewButton">VIEW ALL</button>
-                </div>
-                <div class="dealItem">
-                    <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/612/612/j79czgw0/harmonium/j/x/q/sandhu-s9-sandhu-original-imaexghqstgjdfya.jpeg?q=70">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Harmoniums</li>
-                                    <li class="item2">Upto 60% Off</li>
-                                    <li class="item3">Shop Now!</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/jx7uykw0/top/z/w/y/xl-sftops4257-sassafras-original-imafhz6ucvgrtsfw.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/612/612/flute/e/h/z/scale-a-n-s-padam-music-house-original-imaejf7hfqsakfb6.jpeg?q=70">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Flutes</li>
-                                    <li class="item2">Upto 80% Off</li>
-                                    <li class="item3">Shop Now!</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/612/612/k01b8280/acoustic-guitar/5/n/z/rvl-38c-lgp-3ts-revel-original-imafjx6gxggbsxtr.jpeg?q=70">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Acoustic Guitars</li>
-                                    <li class="item2">Starting ₹1799</li>
-                                    <li class="item3">By Revel</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/612/612/jzfvma80/guitar-capo/v/z/a/combo-pack-ag-011-string-set-agc-20-with-6-celluloid-picks-original-imafjgggxx3swzbb.jpeg?q=70">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Musical Accessories</li>
-                                    <li class="item2">Upto 80% Off</li>
-                                    <li class="item3">Shop Now!</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/612/612/kt8zb0w0/musical-stand/t/x/6/513-professional-adjustable-foldable-musical-note-stand-with-mic-original-imag6mzmzeserwaf.jpeg?q=70">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Microphone Accessories</li>
-                                    <li class="item2">Upto 80% Off</li>
-                                    <li class="item3">Shop Now!</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                            <div class="items" style="width:195px">
-                       
-                                <div class="" style="height:150px">
-                                    <div class="" style="height:150px;width:150px"><img style="height: 150px;" 
-                                            alt="Casio B172 Baby-G Watch  - For Women"
-                                            src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"
-                                            srcset="https://rukminim1.flixcart.com/image/612/612/jzu60sw0/acoustic-guitar/z/t/4/rvl-38c-lpg-bls-revel-original-imafjrkncwveagk5.jpeg?q=70">
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li class="item1">Acoustic Guitars</li>
-                                    <li class="item2">Starting ₹1999</li>
-                                    <li class="item3">By Revel</li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                </div>
+                </section>
+                <!--Section Ends-->
             </div>
-        </section>
-        <!--Books and instrument section ends-->
-    </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
